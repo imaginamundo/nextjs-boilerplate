@@ -18,10 +18,6 @@ function Page() {
         {
             label: 'Error on demand via initialProps',
             checked: false
-        },
-        {
-            label: 'Github pages',
-            checked: false
         }
     ];
 
