@@ -16,6 +16,8 @@ function Page() {
             <h2>Default dependencies</h2>
             <ul>
                 <li>next <i>9.2.1</i>;</li>
+                <li>next-offline <i>5.0.0</i>;</li>
+                <li>next-compose-plugins <i>2.2.0</i>;</li>
                 <li>react <i>16.12.0</i>;</li>
                 <li>react-dom <i>16.12.0</i>;</li>
                 <li>isomortphic-unfetch <i>3.0.0</i>;</li>

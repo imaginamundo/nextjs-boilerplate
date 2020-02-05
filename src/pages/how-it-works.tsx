@@ -12,11 +12,15 @@ function Page() {
                 title="Next.js Boilerplate How It Works"
                 description="How this project works."
             />
-            <h1>In progress…</h1>
+            <h1>How it Works (In progress…)</h1>
             <ul>
-                <li>How to use useContextApplication;</li>
+                <li>Folders structure;</li>
+                <li>Styling (with CSS);</li>
                 <li>Customize layout;</li>
+                <li>How to use useContextApplication;</li>
+                <li>pageType initialProp;</li>
                 <li>Modify assets;</li>
+                <li>defaultPage and securePage;</li>
             </ul>
         </Layout>
     );

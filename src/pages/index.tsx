@@ -13,10 +13,22 @@ function Page() {
         },
         {
             label: 'Offline PWA support;',
+            checked: true
+        },
+        {
+            label: 'Error on demand via initialProps;',
             checked: false
         },
         {
-            label: 'Error on demand via initialProps',
+            label: 'Create insightful Readme.md;',
+            checked: false
+        },
+        {
+            label: 'Create how it works page;',
+            checked: false
+        },
+        {
+            label: 'Add correct license;',
             checked: false
         }
     ];
