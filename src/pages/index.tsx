@@ -32,6 +32,11 @@ function Page() {
             />
             <h1>Hello Next.js Boilerplate</h1>
             <p>This is a boilerplate for Next.js using almost no dependencies beside the ones that Next.js requires.</p>
+            <p>
+                <a href="https://github.com/imaginamundo/nextjs-boilerplate" target="_blank">
+                    Github
+                </a>
+            </p>
 
             <h2>Requirements</h2>
             <ul>
