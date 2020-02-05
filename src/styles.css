@@ -1,0 +1,25 @@
+html {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+p,
+li,
+dt,
+dd {
+    line-height: 1.62em;
+}
+.input {
+    margin: 0;
+    vertical-align: middle;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.input::-webkit-search-decoration {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.input::-ms-expand {
+    display: none;
+}

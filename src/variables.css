@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --primary-color: steelblue;
+    --secondary-color: hotpink;
+    --danger-color: tomato;
+    --warning-color: gold;
+    --success-color: forestgreen;
+    --muted-color: gray;
+    --neutral-color: gainsboro;
+
+    /* Typography */
+    --font-family: sans-serif;
+    --font-size: 16px;
+}

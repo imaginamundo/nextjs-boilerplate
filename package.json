@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-template",
+  "version": "1.0.0",
+  "description": "NextJS template to create a fully site with React",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "react",
+    "boilerplate",
+    "nextjs",
+    "jest",
+    "boilerplate"
+  ],
+  "author": "Diogo Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.1",
+    "next-compose-plugins": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
+    "@types/node": "^13.7.0",
+    "@types/react": "^16.9.19",
+    "babel-jest": "^25.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "react-test-renderer": "^16.12.0",
+    "typescript": "^3.7.5"
+  }
+}
