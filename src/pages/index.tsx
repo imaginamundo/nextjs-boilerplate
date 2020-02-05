@@ -30,6 +30,10 @@ function Page() {
         {
             label: 'Add correct license;',
             checked: false
+        },
+        {
+            label: 'Create PR manual;',
+            checked: false
         }
     ];
 
