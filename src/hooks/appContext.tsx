@@ -11,7 +11,6 @@ export function ContextProvider({ children, ...props }) {
     );
 };
 
-
 export function useAppContext() {
     const context = useContext(Context);
     return context;

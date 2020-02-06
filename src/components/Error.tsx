@@ -6,7 +6,6 @@ function Error({
     statusCode,
     path
 }) {
-    console.log(path);
     const errorMessages = {
         error404: `Page ${ path } not found.`,
         error500: 'Something went wrong.'

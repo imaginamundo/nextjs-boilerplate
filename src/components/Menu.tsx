@@ -35,8 +35,6 @@ function Menu() {
             return item;
         });
 
-    console.log(menuItems);
-
     return (
         <nav className={ styles.menu }>
             { 
