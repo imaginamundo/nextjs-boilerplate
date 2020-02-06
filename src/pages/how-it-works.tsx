@@ -49,6 +49,11 @@ export default ComponentThatWillMakeAClientSideRequest;`
             </SyntaxHighlighter>
             <p>We have an example component at <code>/src/components/Pokemon.tsx</code>, that will do this:</p>
             <Pokemon />
+
+            <h3>Get Initial Props</h3>
+            <p>You can also use <code>getInitialProps</code> to fetch data on cliente, but when you are fetching data on <code>getInitialProps</code> you can also fetch data on the server side.</p>
+            <p><code>getInitialProps</code> will get the information from the client when the transition to a page occurs on the client side.</p>
+            <p>To more information read the <a href="https://nextjs.org/docs/api-reference/data-fetching/getInitialProps" target="_blank">Next.js Documentation on <code>getInitialProps</code></a>.</p>
     
             <ul>
                 <li>Folders structure;</li>
@@ -58,7 +63,7 @@ export default ComponentThatWillMakeAClientSideRequest;`
                 <li>pageType initialProp;</li>
                 <li>Modify assets;</li>
                 <li>defaultPage and securePage;</li>
-                <li>Client side request;</li>
+                <li>Debugging with Visual Studio Code;</li>
             </ul>
         </Layout>
     );
