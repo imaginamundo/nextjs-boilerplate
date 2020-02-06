@@ -10,14 +10,14 @@ import Pokemon from '../components/Pokemon';
 function Page() {
     const clientSideRequest = {
         importHook: 
-`import { useHttp } from '../hooks/http';`,
+`import { useRequest } from '../hooks/request';`,
         withHook: 
 `import React from 'react'; 
-import { useHttp } from '../hooks/http';
+import { useRequest } from '../hooks/request';
 
 function ComponentThatWillMakeAClientSideRequest() {
   // Get the requisition and return the data, error (if there's any) and loading state;
-  const [ data, error, loading ] = useHttp('https://pokeapi.co/api/v2/pokemon/squirtle/');
+  const [ data, error, loading ] = useRequest('https://pokeapi.co/api/v2/pokemon/squirtle/');
 
   return (
     <div>
@@ -38,7 +38,7 @@ export default ComponentThatWillMakeAClientSideRequest;`
             <h1>How it Works (In progress…)</h1>
 
             <h2 id="client-side-request">Client side request</h2>
-            <p>There is a hook in the folder <code>/src/hooks/http</code>.</p>
+            <p>There is a hook in the folder <code>/src/hooks/request</code>.</p>
             <p>To use it you can import the hook on your component.</p>
             <SyntaxHighlighter language="javascript">
                 { clientSideRequest.importHook }
@@ -51,7 +51,7 @@ export default ComponentThatWillMakeAClientSideRequest;`
             <Pokemon />
 
             <h3>Get Initial Props</h3>
-            <p>You can also use <code>getInitialProps</code> to fetch data on cliente, but when you are fetching data on <code>getInitialProps</code> you can also fetch data on the server side.</p>
+            <p>You can also use <code>getInitialProps</code> to fetch data on client, but when you are fetching data on <code>getInitialProps</code> you can also fetch data on the server side.</p>
             <p><code>getInitialProps</code> will get the information from the client when the transition to a page occurs on the client side.</p>
             <p>To more information read the <a href="https://nextjs.org/docs/api-reference/data-fetching/getInitialProps" target="_blank">Next.js Documentation on <code>getInitialProps</code></a>.</p>
     

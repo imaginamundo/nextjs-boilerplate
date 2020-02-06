@@ -20,6 +20,7 @@ function Page() {
                 <li>next-compose-plugins <i>2.2.0</i>;</li>
                 <li>react <i>16.12.0</i>;</li>
                 <li>react-dom <i>16.12.0</i>;</li>
+                <li>react-syntax-highlighter <i>12.2.1</i>;</li>
                 <li>isomortphic-unfetch <i>3.0.0</i>;</li>
             </ul>
 

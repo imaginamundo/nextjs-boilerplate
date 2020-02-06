@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHttp } from '../hooks/http';
+import { useRequest } from '../hooks/request';
 
 function Pokemon({ pokemon = 'squirtle' }) {
-    const [ data, error, loading ] = useHttp(`https://pokeapi.co/api/v2/pokemon/${ pokemon }/`);
+    const [ data, error, loading ] = useRequest(`https://pokeapi.co/api/v2/pokemon/${ pokemon }/`);
 
     return (
         <div style={ { textAlign: 'center' } }>
