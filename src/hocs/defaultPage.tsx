@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { ContextProvider } from '../hooks/useApplicationContext';
+import { IContext } from '../interfaces/context';
+
+import { ContextProvider } from '../hooks/appContext';
 
 /**
  * Default Page High Order Component (HOC) 
@@ -12,11 +14,13 @@ export default function(Page) {
         /**
          * Any prop passed to ContextProvider will be in the hook useContext
          */
+        const contextProps: IContext = {
+            pageType: props.pageType,
+            path: props.path
+        };
+
         return (
-            <ContextProvider
-                pageType={ props.pageType }
-                path={ props.path }
-            >
+            <ContextProvider { ...contextProps }>
                 <Page { ...props } />
             </ContextProvider>
         );

@@ -1,6 +1,7 @@
 import React, { createContext, useContext } from 'react';
 
-const Context = createContext({});
+import { IContext } from '../interfaces/context';
+const Context = createContext<Partial<IContext>>({});
 
 export function ContextProvider({ children, ...props }) {
     return (
@@ -11,6 +12,7 @@ export function ContextProvider({ children, ...props }) {
 };
 
 
-export function useApplicationContext() {
-    return useContext(Context);
+export function useAppContext() {
+    const context = useContext(Context);
+    return context;
 };

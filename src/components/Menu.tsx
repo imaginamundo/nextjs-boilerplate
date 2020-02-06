@@ -1,57 +1,60 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { useApplicationContext } from '../hooks/useApplicationContext';
+import { useAppContext } from '../hooks/appContext';
 
 import styles from './Menu.module.css';
 
 function Menu() {
-    const context = useApplicationContext();
+    const context = useAppContext();
 
-    type MenuItem = {
-        label: string,
-        href: string,
-        active?: boolean
-    };
-
-    const menuItems: MenuItem[] = [
+    const menuItems = [
         {
             label: 'How it works',
-            href: '/how-it-works'
+            href: '/how-it-works',
+            active: false
         },
         {
             label: 'Dependencies',
-            href: '/dependencies'
+            href: '/dependencies',
+            active: false
         },
         {
             label: 'Releases',
-            href: '/releases'
+            href: '/releases',
+            active: false
         },
         {
             label: 'Contributors',
-            href: '/contributors'
+            href: '/contributors',
+            active: false
         }
     ]
-        .map((item: MenuItem) => {
-            // TODO: Fix TypeScript
-            // if (item.href === context.path) item.active = true;
-            item.active = true;
+        .map((item) => {
+            if (item.href === context.path) item.active = true;
             return item;
         });
+
+    console.log(menuItems);
 
     return (
         <nav className={ styles.menu }>
             { 
-                menuItems.map((item, index) => (
-                    <Link
-                        key={ `menu-item-${ index }` }
-                        href={ item.href }
-                    >
-                        <a className={ styles.menuItem }>
-                            { item.label }
-                        </a>
-                    </Link>
-                ))
+                menuItems.map((item, index) => {
+                    const linkClasses = [ styles.menuItem ];
+                    if (item.active) linkClasses.push(styles.menuItemActive);
+
+                    return (
+                        <Link
+                            key={ `menu-item-${ index }` }
+                            href={ item.href }
+                        >
+                            <a className={ linkClasses.join(' ') }>
+                                { item.label }
+                            </a>
+                        </Link>
+                    );
+                })
             }
         </nav>
     );
