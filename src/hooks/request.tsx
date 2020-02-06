@@ -29,7 +29,7 @@ export function useRequest(uri, options = {}) {
         // Cleanup (old component will unmount)
         return () => {
             current = false;
-        }
+        };
     }, []);
 
     return [ data, error, loading ];
